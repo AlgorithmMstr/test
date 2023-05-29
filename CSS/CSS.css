@@ -1,0 +1,130 @@
+body{
+    background-image: url("../IMG/Black-hole-background.png");
+    
+}
+
+p{
+    font-size: larger;
+}
+
+li{
+    font-size: larger;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+#body{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+#menu{
+    width: 960px;
+    margin: 0;
+    margin-top: 20px;
+}
+
+#menu li{
+    display: inline;
+    background-color: transparent;
+    padding: 16px 8px;
+}
+
+li a{
+    color: #7973B9;
+    text-decoration: underline;
+}
+
+li a:hover{
+    color: #96841E;
+}
+
+#menu li a{
+    text-decoration: none;
+    color: rgb(200, 200, 200);
+}
+
+
+#menu li a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    position: relative;
+}
+
+@keyframes black-hole{
+    0%{background-image: url("../IMG/Hole1.jpg");}
+    33%{background-image: url("../IMG/Hole2.jpg");}
+    66%{background-image: url("../IMG/Hole3.jpg");}
+    100%{background-image: url("../IMG/Hole1.jpg");}
+}
+
+#animation{
+    width: 500px;
+    height: 500px;
+    animation-name: black-hole;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: -60px;
+}
+
+#video{
+    position: absolute;
+    left: 460px;
+}
+
+#weird{
+    margin-left: 10%;
+}
+
+#N{
+    margin-left: 25%; 
+    margin-right: auto;
+}
+
+@media screen and (max-width: 440px){
+    #body{
+        width: 100%;
+    }
+    #video{
+        position: relative;
+        left: auto;
+        right: auto;
+        left: 0px;
+    }
+    #animation{
+        position: relative;
+        left: 0px;
+        width: 100%;
+        width: 300px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #menu li a{
+        display: block;
+        width: 25%;
+    }
+
+    @keyframes black-hole{
+        0%{background-image: url("../IMG/Hole1_media.jpg");}
+        33%{background-image: url("../IMG/Hole2_media.jpg");}
+        66%{background-image: url("../IMG/Hole3_media.jpg");}
+        100%{background-image: url("../IMG/Hole1_media.jpg");}
+    }
+
+    .quark{
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+    }
+}
